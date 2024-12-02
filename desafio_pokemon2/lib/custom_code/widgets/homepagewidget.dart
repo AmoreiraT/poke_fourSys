@@ -110,30 +110,30 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               : Padding(
                   padding: const EdgeInsets.all(16),
                   child: DataTable2(
-                    columns: const [
+                    columns:  [
                       DataColumn2(
-                        label: Text('#'),
+                        label: const Text('#'),
                         size: ColumnSize.S,
                       ),
                       DataColumn2(
-                        label: Text('Image'),
+                        label: const Text('Image'),
                         size: ColumnSize.L,
                       ),
                       DataColumn2(
-                        label: Text('Name'),
+                        label: const Text('Name'),
                         size: ColumnSize.M,
                       ),
                       DataColumn2(
-                        label: Text('Types'),
+                        label: const Text('Types'),
                         size: ColumnSize.L,
                       ),
                       DataColumn2(
-                        label: Text('Height'),
+                        label: const Text('Height'),
                         size: ColumnSize.S,
                         numeric: true,
                       ),
                       DataColumn2(
-                        label: Text('Weight'),
+                        label: const Text('Weight'),
                         size: ColumnSize.S,
                         numeric: true,
                       ),
