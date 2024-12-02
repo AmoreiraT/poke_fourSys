@@ -1,4 +1,4 @@
-name: desafio_pokemon2
+name: my_desafio_pokemon2_2c1go2
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -34,14 +34,14 @@ dependencies:
   collection: 1.18.0
   data_table_2: ^2.5.16
   desafio_pokemon2_2c1go2:
-    path: ./dependencies/desafio_pokemon2_2c1go2 # current
+    path: ../desafio_pokemon2_2c1go2 # current
   equatable: 2.0.5
   fetch_api: 2.2.0
   fetch_client: 1.1.2
   ff_commons:
-    path: ./dependencies/ff_commons # 1.0.0+1
+    path: ../ff_commons # 1.0.0+1
   ff_theme:
-    path: ./dependencies/ff_theme # 1.0.0+1
+    path: ../ff_theme # 1.0.0+1
   flutter_animate: 4.5.0
   flutter_cache_manager: 3.4.1
   font_awesome_flutter: 10.7.0
@@ -113,13 +113,13 @@ flutter:
     - assets/rive_animations/
     - assets/pdfs/
     - assets/jsons/
-    - dependencies/desafio_pokemon2_2c1go2/assets/fonts/
-    - dependencies/desafio_pokemon2_2c1go2/assets/images/
-    - dependencies/desafio_pokemon2_2c1go2/assets/videos/
-    - dependencies/desafio_pokemon2_2c1go2/assets/audios/
-    - dependencies/desafio_pokemon2_2c1go2/assets/rive_animations/
-    - dependencies/desafio_pokemon2_2c1go2/assets/pdfs/
-    - dependencies/desafio_pokemon2_2c1go2/assets/jsons/
+    - ../desafio_pokemon2_2c1go2/assets/fonts/
+    - ../desafio_pokemon2_2c1go2/assets/images/
+    - ../desafio_pokemon2_2c1go2/assets/videos/
+    - ../desafio_pokemon2_2c1go2/assets/audios/
+    - ../desafio_pokemon2_2c1go2/assets/rive_animations/
+    - ../desafio_pokemon2_2c1go2/assets/pdfs/
+    - ../desafio_pokemon2_2c1go2/assets/jsons/
 
 
 
