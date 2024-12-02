@@ -1,59 +1,81 @@
 import 'package:flutter/material.dart';
-import 'home_page_widget.dart';
 
-void main() {
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import 'flutter_flow/flutter_flow_util.dart';
+import 'flutter_flow/internationalization.dart';
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  GoRouter.optionURLReflectsImperativeAPIs = true;
+  usePathUrlStrategy();
+
+  await FlutterFlowTheme.initialize();
+
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});  // Sintaxe antiga para compatibilidade
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  State<MyApp> createState() => _MyAppState();
+
+  static _MyAppState of(BuildContext context) =>
+      context.findAncestorStateOfType<_MyAppState>()!;
+}
+
+class _MyAppState extends State<MyApp> {
+  Locale? _locale;
+
+  ThemeMode _themeMode = FlutterFlowTheme.themeMode;
+
+  late AppStateNotifier _appStateNotifier;
+  late GoRouter _router;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _appStateNotifier = AppStateNotifier.instance;
+    _router = createRouter(_appStateNotifier);
+  }
+
+  void setLocale(String language) {
+    safeSetState(() => _locale = createLocale(language));
+  }
+
+  void setThemeMode(ThemeMode mode) => safeSetState(() {
+        _themeMode = mode;
+        FlutterFlowTheme.saveThemeMode(mode);
+      });
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'FourSys Pokédex',
-      debugShowCheckedModeBanner: false,
+    return MaterialApp.router(
+      title: 'desafio-pokemon2',
+      localizationsDelegates: const [
+        FFLocalizationsDelegate(),
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        FallbackMaterialLocalizationDelegate(),
+        FallbackCupertinoLocalizationDelegate(),
+      ],
+      locale: _locale,
+      supportedLocales: const [
+        Locale('pt'),
+      ],
       theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFFEE1515),
-          brightness: Brightness.light,
-        ),
-        dataTableTheme: DataTableThemeData(
-          headingRowColor: MaterialStateProperty.all(
-            const Color(0xFFEE1515).withOpacity(0.1),
-          ),
-          dividerThickness: 1,
-        ),
-        cardTheme: CardTheme(
-          elevation: 4,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15),
-          ),
-        ),
+        brightness: Brightness.light,
       ),
       darkTheme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFFEE1515),
-          brightness: Brightness.dark,
-        ),
-        dataTableTheme: DataTableThemeData(
-          headingRowColor: MaterialStateProperty.all(
-            const Color(0xFFEE1515).withOpacity(0.2),
-          ),
-          dividerThickness: 1,
-        ),
-        cardTheme: CardTheme(
-          elevation: 4,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15),
-          ),
-        ),
+        brightness: Brightness.dark,
       ),
-      themeMode: ThemeMode.system,
-      home: const HomePageWidget(),
+      themeMode: _themeMode,
+      routerConfig: _router,
     );
   }
 }
