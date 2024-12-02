@@ -1,0 +1,1 @@
+ /Users/amoreirath/dev/flutter/tste_poke/poke_fourSys/.dart_tool/flutter_build/c0da762294a95ec308c1936a3a8c9b24/native_assets.yaml: 
