@@ -1,4 +1,4 @@
-name: desafio_pokemon2_2c1go2
+name: my_desafio_pokemon2_2c1go2
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -18,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
@@ -34,14 +34,14 @@ dependencies:
   collection: 1.18.0
   data_table_2: ^2.5.16
   desafio_pokemon2_2c1go2:
-    path: ./dependencies/desafio_pokemon2_2c1go2 # current
+    path: ../desafio_pokemon2_2c1go2 # current
   equatable: 2.0.5
   fetch_api: 2.2.0
   fetch_client: 1.1.2
   ff_commons:
-    path: ./dependencies/ff_commons # 1.0.0+1
+    path: ../ff_commons # 1.0.0+1
   ff_theme:
-    path: ./dependencies/ff_theme # 1.0.0+1
+    path: ../ff_theme # 1.0.0+1
   flutter_animate: 4.5.0
   flutter_cache_manager: 3.4.1
   font_awesome_flutter: 10.7.0
@@ -98,6 +98,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -112,17 +113,22 @@ flutter:
     - assets/rive_animations/
     - assets/pdfs/
     - assets/jsons/
-    - dependencies/desafio_pokemon2_2c1go2/assets/fonts/
-    - dependencies/desafio_pokemon2_2c1go2/assets/images/
-    - dependencies/desafio_pokemon2_2c1go2/assets/videos/
-    - dependencies/desafio_pokemon2_2c1go2/assets/audios/
-    - dependencies/desafio_pokemon2_2c1go2/assets/rive_animations/
-    - dependencies/desafio_pokemon2_2c1go2/assets/pdfs/
-    - dependencies/desafio_pokemon2_2c1go2/assets/jsons/
+    - ../desafio_pokemon2_2c1go2/assets/fonts/
+    - ../desafio_pokemon2_2c1go2/assets/images/
+    - ../desafio_pokemon2_2c1go2/assets/videos/
+    - ../desafio_pokemon2_2c1go2/assets/audios/
+    - ../desafio_pokemon2_2c1go2/assets/rive_animations/
+    - ../desafio_pokemon2_2c1go2/assets/pdfs/
+    - ../desafio_pokemon2_2c1go2/assets/jsons/
+
+
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
+
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
+
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
@@ -142,3 +148,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+

@@ -548,13 +548,13 @@
       "languageVersion": "3.3"
     },
     {
-      "name": "desafio_pokemon2",
+      "name": "desafio_pokemon2_2c1go2",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-12-02T23:29:49.724545Z",
+  "generated": "2024-12-02T23:54:23.511954Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///Users/amoreirath/development/flutter",
