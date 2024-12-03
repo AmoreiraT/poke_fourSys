@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 // Begin custom widget code
 // DO NOT REMOVE OR MODIFY THE CODE ABOVE!
 
+import 'index.dart'; // Imports other custom widgets
+
 // home_page_widget.dart
 import 'dart:async';
 import 'dart:convert';
