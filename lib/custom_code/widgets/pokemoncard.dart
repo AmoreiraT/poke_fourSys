@@ -6,9 +6,10 @@ import 'package:flutter/material.dart';
 // Begin custom widget code
 // DO NOT REMOVE OR MODIFY THE CODE ABOVE!
 
+import 'package:desafio_pokemon2/custom_code/widgets/homepagewidget.dart';
+
 // pokemon_card.dart
 import 'package:cached_network_image/cached_network_image.dart';
-import 'pokemon_service.dart';
 
 class PokemonCard extends StatelessWidget {
   final Pokemon pokemon;
@@ -111,4 +112,10 @@ class PokemonCard extends StatelessWidget {
       ),
     );
   }
+}
+
+extension on Pokemon {
+  get height => null;
+
+  get weight => null;
 }

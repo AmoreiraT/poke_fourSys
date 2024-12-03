@@ -28,11 +28,11 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter
   auto_size_text: 3.0.0
+  badges: 2.0.2
   cached_network_image: 3.4.1
   cached_network_image_platform_interface: 4.1.1
   cached_network_image_web: 1.3.1
   collection: 1.18.0
-  data_table_2: ^2.5.16
   desafio_pokemon2_2c1go2:
     path: ../desafio_pokemon2_2c1go2 # current
   equatable: 2.0.5
@@ -42,6 +42,7 @@ dependencies:
     path: ../ff_commons # 1.0.0+1
   ff_theme:
     path: ../ff_theme # 1.0.0+1
+  fl_chart: 0.68.0
   flutter_animate: 4.5.0
   flutter_cache_manager: 3.4.1
   font_awesome_flutter: 10.7.0

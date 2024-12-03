@@ -52,6 +52,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'pokedex',
           path: '/pokedex',
           builder: (context, params) => PokedexWidget(),
+        ),
+        FFRoute(
+          name: 'Dashboard6',
+          path: '/dashboard6',
+          builder: (context, params) => Dashboard6Widget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
